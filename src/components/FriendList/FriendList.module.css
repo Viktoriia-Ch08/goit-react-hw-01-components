@@ -37,21 +37,15 @@
 }
 
 .status{
-    
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
 }
 
 .online{
-    width: 20px;
-    height: 20px;
-
     background-color: green;
-    border-radius: 50px;
 }
 
 .offline{
-    width: 20px;
-    height: 20px;
-    
     background-color: red;
-    border-radius: 50px;
 }

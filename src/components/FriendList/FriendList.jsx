@@ -12,11 +12,13 @@ const FriendList = ({ friends }) => (
           width="48"
         />
         <div className={css.wrap}>
-          {friend.isOnline ? (
-            <span className={css.online}>{friend.isOnline}</span>
-          ) : (
-            <span className={css.offline}>{friend.isOnline}</span>
-          )}
+          <span
+            className={`${css.status} ${
+              friend.isOnline ? css.online : css.offline
+            }`}
+          >
+            {friend.isOnline}
+          </span>
           <p className="name">{friend.name}</p>
         </div>
       </li>
